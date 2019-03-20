@@ -1,3 +1,47 @@
+.widget_customsearch {
+  margin-top: 30px; }
+
+input,
+.guest-detail {
+  border: 1px solid #fa8c24;
+  padding: 10px;
+  width: 100%; }
+
+label {
+  font-weight: bold; }
+
+.searchbox-title {
+  color: #fa8c24; }
+
+.full {
+  margin-left: 5px;
+  width: 65%;
+  float: right; }
+
+.date-input {
+  margin-left: 2px; }
+
+.quantity {
+  font-weight: 700;
+  margin-left: -3px; }
+
+.quantity-select {
+  margin-right: 2px; }
+
+.choice-label {
+  width: 60%; }
+
+.btn-custom {
+  color: #fff !important;
+  background-color: #fa8c24 !important; }
+
+#guest-form {
+  display: none; }
+
+.btn-availability {
+  height: 46px;
+  margin-top: 7px; }
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
