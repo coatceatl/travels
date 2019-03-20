@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>Booking</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <section class="col-md-9 booking-page">
+          <div class="step">Оформление заказа</div>
+
+          <div class="booking-hotel-desc">
+            <div class="hotel-rate rate"></div>
+            <div class="booking-hotel-title">Le Petit Hotel Prague
+              <a class="modal-hotel" href="#" target="_blank">
+                <img src="src/img/info.svg" class="info-icon">
+              </a>
+            </div>
+            <div class="booking-hotel-content">
+              <div>Прага</div>
+              <div>Период проживания</div>
+              <div>22.03.2019 - 30.03.2019(8 ночей)</div>
+            </div>
+          </div>
+          <div class="booking-hotel-details">
+            <form class="booking-checkout-form">
+              <div class="1">
+                <section id="result-rooms-details" class="reserve-rooms-details">
+                  <div class="form-group-booking room-type-title">Номер</div>
+                  <div class="form-group-booking room-type-content">Small Double</div>
+                </section>
+                <section id="result-cancel-details" class="reserve-rooms-details">
+                  <div class="form-group-booking room-type-title">Условия отмены бронирования</div>
+                  <div class="form-group-booking room-type-content">1. В случае отмены с 18.02.19 по 03.03.19 - штраф 5% или 100 шек(меньшее).<br>
+                    2. С 15.03.19 по 25.03.19 - отмена невозможна.
+                  </div>
+                </section>
+                <section id="result-breakfast-details" class="reserve-rooms-details">
+                  <div class="form-group-booking room-type-title">Тип питания</div>
+                  <div class="form-group-booking room-type-content">Вкл. завтрак</div>
+                </section>
+                <section id="result-order-details" class="reserve-rooms-details">
+                  <div class="form-group-booking room-type-title">Заказ/Бронирование</div>
+                  <div class="form-group-booking room-type-content">Доступно для заказа - Вы можете заказать этот номер прямо сейчас</div>
+                </section>
+                <section id="result-price-details" class="reserve-rooms-details">
+                  <div class="form-group-booking room-type-title">Цена</div>
+                  <div class="form-group-booking room-type-content">126 EUR</div>
+                </section>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
