@@ -3,7 +3,24 @@
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+  flex-direction: column;
 }
 .step {
   color: #fa8c24;
+}
+.panel-heading {
+  background-color: #efefef;
+}
+.panel-body {
+  display: flex;
+}
+.panel-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.img-open {
+  display: none;
 }

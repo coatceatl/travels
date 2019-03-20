@@ -90,6 +90,11 @@ $(document).ready(function() {
   //added handler
   $('#availability-search').click(function() {
     $('.after-search').toggleClass('visible');
-    $('.widget_customsearch').addClass('hidding');
+    $('.widget_customsearch').toggleClass('hidding');
+  });
+
+  //collapsed caret down
+  $(".availability-main-list").click(function() {
+    $(".availability-main-img").toggleClass("img-open");
   });
 });

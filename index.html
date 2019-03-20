@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="dist/main.css">
   </head>
   <body>
-    <div class="container widget_customsearch">
-      <form role="search" class="row search-hotels-first" action="" method="get" name="booking">
+    <div class="container">
+      <form role="search" class="row  widget_customsearch search-hotels-first" action="" method="get" name="booking">
         <fieldset class="searchbox-row hotel-city col-xs-12 col-sm-6 col-md-4">
           <label class="date-label" for="destination">Страна/Город</label>
           <input id="destination" class="search-main" autocomplete="off" name="destination" value="" required type="text" placeholder="Страна или Город" />
@@ -69,17 +69,140 @@
             </div>
           </fieldset>
         </div>
-        <div class="hotel-search col-xs-12 col-sm-6 col-md-2">
+        <div class="hotel-search col-12 col-sm-6 col-md-2">
           <label class="date-label" for="availability-search"></label>
           <input id="availability-search" class="btn btn-custom btn-availability" name="searchbox-search" type="button" value="Поиск" />
         </div>
       </form>
-    </div>
 
-    <div class="row">
-      <article class="col-xs-12 col-md-9  after-search">
-        <h4 class="step">РЕЗУЛЬТАТЫ ПОИСКА</h4>
-      </article>
+      <div class="row">
+        <article class="col-12 after-search">
+          <h4 class="step">РЕЗУЛЬТАТЫ ПОИСКА</h4>
+
+          <div class="results col-12">
+            <div class="results-list">
+              <div class="results-item">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                    <div class="panel-heading availability-main-list" role="tab" id="headingOne">
+                      <div class="panel-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <div class="left">
+                          <img src="http://dintours.com/wp-content/uploads/2019/02/plus.svg" class="availability-main-img" alt="">
+                          <img src="http://dintours.com/wp-content/uploads/2019/02/down-ok.svg" class="availability-main-img img-open" alt="">
+                          <span>LE PETIT HOTEL PRAGUE</span>
+                          <span class="rate"></span>
+                        </div>
+                        <span class="right">от 184 EUR</span>
+                      </div>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body">
+                        <div class="results-inner results-title table-hotel-title"><span class="mobile-title">LE PETIT HOTEL PRAGUE</span> Прага
+                          <img src="http://dintours.com/wp-content/uploads/2019/02/info.svg" class="modal-hotel info-icon"><br/>
+
+                          <span class="mobile-vis mob-wrap">Информация об отеле</span>
+                          <span class="mobile-vis mob-info mob-wrap">(откроется в новой вкладке)</span><br/>
+                          <div class="mobile-vis mob-info">
+                            <img src="http://dintours.com/wp-content/uploads/2019/02/circle-orange.png" class="add-info" alt="">
+                            Средства спишутся с вашей карты после подтверждения от отеля</div>
+                        </div>
+
+                        <div class="results-inner results-room room-check">
+                          <span class="mobile-vis">Номер</span>Double Standart
+                          <img src="http://dintours.com/wp-content/uploads/2019/02/ok.svg" class="modal-conditions info-icon"
+                                                                                           data-toggle="popover"
+                                                                                           data-trigger="hover"
+                                                                                           data-html="true"
+                                                                                           title="<h4>Доступно для заказа</h4>"
+                                                                                           data-content="Вы можете заказать этот номер прямо сейчас">
+                        </div>
+                        <div class="results-inner results-child">
+                          <span class="mobile-vis">Размещение</span>
+                          <span>Ребенок без места</span>
+                        </div>
+                        <div class="results-inner results-cancel">Условия отмены
+                          <img src="http://dintours.com/wp-content/uploads/2019/02/info.svg" class="modal-cancel info-icon"
+                                                                                             data-toggle="popover"
+                                                                                             data-trigger="hover"
+                                                                                             data-html="true" 
+                                                                                             title="<h4>Условия отмены бронирования</h4>"
+                                                                                             data-content="<div>1. В случае отмены с 18.02.19 по 03.03.19 - штраф 5% или 100 шек(меньшее).</div>
+                                                                                             <div>2. В случае отмены с 04.03.19 по 11.03.19 - штраф 50 EUR + 5%.</div>
+                                                                                             <div>3. В случае отмены с 12.03.19 по 14.03.19 - штраф 45 EUR + 50 EUR + 5%.</div>
+                                                                                             <div>4. С 15.03.19 по 25.03.19 - отмена невозможна.</div>"
+                                                                                             <span class="mobile-vis mob-right"></span>
+                        </div>
+                        <div class="results-inner results-breakfast">
+                          <span class="mobile-vis">Тип питания</span>
+                          <span>Вкл. завтрак</span>
+                        </div>
+                        <div class="results-inner results-price">
+                          <span class="mobile-vis">Цена за номер</span>
+                          <span>184.00 EUR</span>
+                        </div>
+                        <div class="results-inner results-button">
+                          <a href='http://dintours.com/?product=%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B9' class="btn btn-custom btn-order btn-form">Заказать</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingOne">
+                        <div class="panel-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
+                          <div class="left">
+                            <img src="http://dintours.com/wp-content/uploads/2019/02/plus.svg" alt="">
+                            <span>LE PETIT HOTEL PRAGUE</span>
+                            <span class="rate"></span>
+                          </div>
+                          <span class="right">от 184 EUR</span>
+                        </div>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                          <div class="results-inner results-title table-hotel-title"><span class="mobile-title">LE PETIT HOTEL PRAGUE</span> Прага
+                            <img src="http://dintours.com/wp-content/uploads/2019/02/info.svg" class="modal-hotel info-icon"><br/>
+
+                            <span class="mobile-vis mob-wrap">Информация об отеле</span>
+                            <span class="mobile-vis mob-info mob-wrap">(откроется в новой вкладке)</span><br/>
+                            <div class="mobile-vis mob-info">
+                              <img src="http://dintours.com/wp-content/uploads/2019/02/circle-green.png" class="add-info" alt="">
+                              Вы можете заказать этот номер прямо сейчас</div>
+                          </div>
+
+                          <div class="results-inner results-room room-check">
+                            <span class="mobile-vis">Номер</span>Double Standart
+                            <img src="http://dintours.com/wp-content/uploads/2019/02/ok.svg" class="modal-conditions info-icon"
+                                                                                             data-toggle="popover" data-trigger="hover" title="Доступно для заказа" data-content="Вы можете заказать этот номер прямо сейчас">
+                          </div>
+                          <div class="results-inner results-child">
+                            <span class="mobile-vis">Размещение</span>
+                            <span>Ребенок без места</span>
+                          </div>
+                          <div class="results-inner results-cancel">Условия отмены
+                            <img src="http://dintours.com/wp-content/uploads/2019/02/info.svg" class="modal-cancel info-icon"
+                                                                                               data-toggle="popover" data-trigger="hover" title="Условия отмены" data-content="Здесь будет текст с условиями отмены">
+                            <span class="mobile-vis mob-right">Здесь будут условия отмены</span>
+                          </div>
+                          <div class="results-inner results-breakfast">
+                            <span class="mobile-vis">Тип питания</span>
+                            <span>Вкл.завтрак</span>
+                          </div>
+                          <div class="results-inner results-price">
+                            <span class="mobile-vis">Цена за номер</span>
+                            <span>184.00 EUR</span>
+                          </div>
+                          <div class="results-inner results-button">
+                            <a href='http://dintours.com/?page_id=5374' class="btn btn-custom btn-order">Заказать</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        </article>
+      </div>
+
     </div>
     <script src="dist/main.js"></script >
   </body>

@@ -38,10 +38,10 @@ label {
 #guest-form,
 .after-search,
 .hidding {
-  display: none;
+  display: none !important;
 }
 .visible {
-  display: flex;
+  display: flex !important;
 }
 .btn-availability {
   height: 46px;
