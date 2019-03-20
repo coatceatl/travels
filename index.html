@@ -8,11 +8,70 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="title">Travel</h1>
+      <form role="search" class="row search-hotels-first" action="" method="get" name="booking">
+        <fieldset class="searchbox-row hotel-city col-xs-12 col-sm-6 col-md-3">
+          <label class="date-label" for="destination">Страна/Город</label>
+          <input id="destination" class="search-main" autocomplete="off" name="destination" value="" required type="text" placeholder="Страна или Город" />
+        </fieldset>
+        <div class="hotel-dates-wrap d-flex col-xs-12 col-sm-6 col-md-5">
+          <fieldset id="startdate-wrap" class="searchbox-row hotel-dates input-group date">
+            <label class="date-label" for="startdate">Заезд</label>
+            <input id="startdate" class="date-input" name="startdate" readonly="readonly" type="text" value="" autocomplete="off" />
+            <input type="hidden" name="sd_timestamp" id="sd_timestamp" />
+          </fieldset>&#8195;
+          <fieldset id="enddate-wrap" class="searchbox-row hotel-dates input-group date wrap-nights">
+            <label class="date-label" for="enddate">Выезд</label>
+            <input id="enddate" class="date-input" name="enddate" type="text" value="" autocomplete="off" />
+            <input type="hidden" name="ed_timestamp" id="ed_timestamp" />
+          </fieldset>
+          <fieldset id="enddate-wrap" class="searchbox-row hotel-dates input-group date wrap-nights cell-night">
+            <label class="date-label" for="count_night">Ночей</label>
+            <input id="count_night" class="count-night" name="count_night" type="text" value="" disabled />
+            <span class="nights"></span>
+          </fieldset>
         </div>
-      </div>
+        <div class="hotel-guests col-xs-12 col-sm-6 col-md-2">
+          <fieldset id="guests-wrap" class="searchbox-row guests-wrap">
+            <label for="guest-detail">Гостей</label>
+            <div class="guest-detail">
+              <div class="guest-no">
+                <span id="g-no">1</span>
+              </div>
+              <i class="fa fa-chevron-down"></i>
+            </div>
+
+            <div id="guest-form" class="guest-form">
+              <div class="passenger-form-wrapper">
+                <ul class="age-group">
+                  <li>
+                    <div class="g-cell age-name">Взрослых</div>
+                    <div class="g-cell age-select">
+                      <span class="g-dec q-btn" data-age="adults-g">-</span>
+                      <input type="text" class="g-num" name="adults" value="1">
+                      <span class="g-inc q-btn" data-age="adults-g">+</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="g-cell age-name">Детей</div>
+                    <div class="g-cell age-select">
+                      <span class="g-dec q-btn" data-age="children-g">-</span>
+                      <span class="g-num"><input type="text" name="children_sum" value="0"></span>
+                      <span class="g-inc q-btn" data-age="children-g">+</span>
+                    </div>
+                  </li>
+                </ul>
+                <div class="pas-class">
+                  <ul class="new-age-group age-group">
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="hotel-search col-xs-12 col-sm-6 col-md-2">
+          <input id="availability-search" class="btn btn-custom btn-availability" name="searchbox-search" type="button" value="Поиск" />
+        </div>
+      </form>
     </div>
     <script src="dist/main.js"></script >
   </body>
