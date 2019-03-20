@@ -35,8 +35,13 @@ label {
   color: #fff !important;
   background-color: #fa8c24!important;
 }
-#guest-form {
+#guest-form,
+.after-search,
+.hidding {
   display: none;
+}
+.visible {
+  display: flex;
 }
 .btn-availability {
   height: 46px;
@@ -60,6 +65,11 @@ i.icons {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    @media(max-width: 578px) {
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 .g-num {
@@ -79,3 +89,4 @@ i.icons {
 .pas-class {
   width: 100%;
 }
+

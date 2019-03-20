@@ -86,4 +86,10 @@ $(document).ready(function() {
       return false;
     }
   });
+
+  //added handler
+  $('#availability-search').click(function() {
+    $('.after-search').toggleClass('visible');
+    $('.widget_customsearch').addClass('hidding');
+  });
 });
