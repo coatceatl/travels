@@ -63,13 +63,19 @@ i.icons {
   }
 }
 .g-num {
-  width: 30px;
+  width: 40px;
   margin: 0 10px;
+  text-align: center;
   & input {
-    width: 30px;
+    width: 40px;
+    text-align: center;
   }
 }
 .age-name {
   display: flex;
   align-items: center;
+  font-size: 14px;
+}
+.pas-class {
+  width: 100%;
 }
