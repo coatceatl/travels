@@ -92,7 +92,8 @@ i.icons {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  flex-direction: column; }
+  flex-direction: column;
+  padding-top: 30px; }
 
 .step {
   color: #fa8c24; }
@@ -112,6 +113,29 @@ i.icons {
 
 .img-open {
   display: none; }
+
+.info-icon {
+  width: 25px; }
+
+.results-inner {
+  margin-bottom: 10px; }
+
+.results-title,
+.room-check,
+.results-child,
+.results-cancel,
+.results-price,
+.results-breakfast {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.btn-order {
+  width: 100%; }
+
+@media (max-width: 578px) {
+  .panel-body {
+    flex-direction: column; } }
 
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
