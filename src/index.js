@@ -69,4 +69,21 @@ $(document).ready(function() {
     guests_count_label.html(0);
     $('body').find('#guest-form input[name="adults"], #guest-form input[name="children_sum"]').trigger('change');
   });
+
+  //calculate guests count
+  $('body').find('#guest-form input[name="adults"], #guest-form input[name="children_sum"]').on('change', function() {
+    var guests_count_label  = $('body').find('#g-no'),
+      current_count = parseInt(guests_count_label.html()),
+      input_count = parseInt($(this).val());
+    guests_count_label.html(current_count+input_count);
+
+    var $countform = parseInt(guests_count_label.html());
+    $("body").data("init", $countform);
+
+    if($countform > 1) {
+      console.log($countform);
+      localStorage.setItem('countform', $countform);
+      return false;
+    }
+  });
 });
