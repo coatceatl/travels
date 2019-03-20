@@ -50,3 +50,26 @@ i.icons {
   display: flex;
   align-items: center;
 }
+.passenger-form-wrapper {
+  margin-top: 15px;
+}
+.age-group {
+  padding-left: 0;
+  list-style: none;
+  & li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+}
+.g-num {
+  width: 30px;
+  margin: 0 10px;
+  & input {
+    width: 30px;
+  }
+}
+.age-name {
+  display: flex;
+  align-items: center;
+}

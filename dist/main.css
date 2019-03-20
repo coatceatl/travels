@@ -50,6 +50,27 @@ i.icons {
   display: flex;
   align-items: center; }
 
+.passenger-form-wrapper {
+  margin-top: 15px; }
+
+.age-group {
+  padding-left: 0;
+  list-style: none; }
+  .age-group li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; }
+
+.g-num {
+  width: 30px;
+  margin: 0 10px; }
+  .g-num input {
+    width: 30px; }
+
+.age-name {
+  display: flex;
+  align-items: center; }
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
